@@ -6,6 +6,31 @@ body {
     overflow: hidden;
     padding: 0;
     margin: 0%;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+
+#dropdownMenu1 {
+    background:  #FAF7EE;
+    color: #C8BDA4;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+}
+
+#estadoSelecionado {
+    flex-grow: 2;
+    text-align: left;
+}
+
+.dropdown {
+    width: 50%;
+    margin-top: 15px;
 }
 
 #map {
@@ -14,23 +39,51 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .container-fluid {
     position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
+.container-fluid.bot {
+    border: 2px solid green;
+   
+}
 .busca {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative
+    position: relative;
 }
 
 #box-info {
+   z-index: 101;
    display: flex;
-   border: 2px solid green;
+   background: #FAF7EE;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 400px;
+   margin: 0;
+   border-radius: 3 3 0 0 ;
+   box-shadow: -2px 4px 9px rgba(0, 0, 0, 0.25);
+   font-size: 15px;
+   text-align: center;
+   padding-top: 30px;
+}
+
+.caveat {
+    font-family: 'Caveat Brush', cursive;
+}
+
+#estadoExib {
+    font-family:  'Raleway', sans-serif;
+    color: #C14B34;
+    font-weight: 600;
+    padding-left: 5px;
 }

@@ -2,6 +2,14 @@
 <html lang="pt-br">
   <head>
     <title>MAPA DAS MINAS</title>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
   
@@ -9,6 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    
     <!--Mapa-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
@@ -17,31 +26,39 @@
     <script src="scripts/main.js"></script>
     
     
-    </head>
+  </head>
+
   <body onload="Start()">
-    <div class="container-fluid">
-        <img width="100px" src="assets/marcadagua.png">
-
-        <span class="row busca">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Dropdown
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </div>
-        </span>
-
-        <div class ="row" id="box-info">
-           <div class="col-12">info</div>
+        <div class="container-fluid top">
+            <img width="100px" src="assets/marcadagua.png">
+    
+            <span class="row busca">
+                <div class="dropdown">
+                    <button class="btn btn-default" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <span id="estadoSelecionado">Seu estado</span>  
+                     <span class="iconify lupa" data-icon="fluent:search-20-regular" data-inline="false"></span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+            </span>   
         </div>
-    </div>
+    
+        
+            <div class ="row" id="box-info">
+                <div class="col-12">
+                    <img src="assets/minas.png">
+                    <p class="caveat"> EM<span id="estadoExib">ESTADO</span></p>
+                </div>
+             </div>
+  
+    
         <div id='map'> </div>
        
 

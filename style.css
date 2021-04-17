@@ -10,6 +10,49 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#loading {
+    background-image: url('assets/loadingbg.png');
+    z-index: 110;
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 20%;
+    align-items: center;
+    
+}
+
+.logo {
+    margin-bottom: 30%;   
+}
+
+.textoLoading {
+   width: 60%;
+   text-align: center;
+   font-size: 17px;
+}
+
+.frase {
+    font-weight: 600;
+    margin-bottom: 0;    
+}
+
+.carregandoGif {
+   margin-top: 20%;
+}
+
+.creditos {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
 #dropdownMenu1 {
     background:  #FAF7EE;
     color: #C8BDA4;

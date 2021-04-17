@@ -1,15 +1,17 @@
 console.log('js mapa')
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicGlzY2luYWRlcGl4ZWwiLCJhIjoiY2trenk1ZzE2MGViYTJ1cG5hbXY1c3A5ZCJ9.lso-cNpB8Id_MW1s6_BM7A';
+const styleURL = 'mapbox://styles/piscinadepixel/cknl6psxv12rz17teuir6yp6a'
+const accessTOKEN = 'pk.eyJ1IjoicGlzY2luYWRlcGl4ZWwiLCJhIjoiY2trenk1ZzE2MGViYTJ1cG5hbXY1c3A5ZCJ9.lso-cNpB8Id_MW1s6_BM7A'
+const mapZOOM = 5
+const mapCENTER = [-43.2075000, -22.9027800]
+
+mapboxgl.accessToken = accessTOKEN;
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/piscinadepixel/cknl6psxv12rz17teuir6yp6a',
-  center: [-122.662323, 45.523751], // starting position
-  zoom: 12
+  style: styleURL,
+  center: mapCENTER, // starting position
+  zoom: mapZOOM
 });
-// set the bounds of the map
-var bounds = [[-123.069003, 45.395273], [-122.303707, 45.612333]];
-map.setMaxBounds(bounds);
 
 // initialize the map canvas to interact with later
 var canvas = map.getCanvasContainer();

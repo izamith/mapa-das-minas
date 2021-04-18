@@ -1,0 +1,59 @@
+#loading {
+    background-image: url('assets/loadingbg.png');
+    z-index: 110;
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 90px;
+    align-items: center;
+    
+}
+
+.logo {
+    margin-bottom: 35px;   
+}
+
+.textoLoading {
+   width: 60%;
+   text-align: center;
+   font-size: 17px;
+   color: #232D18;
+}
+
+.frase {
+    font-weight: 600;
+    margin-bottom: 0;    
+}
+
+.carregandoGif {
+   margin-top: 120px;
+   margin-bottom: 60px;
+}
+
+ .loader {
+     animation-name: fadeInOut;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     -o-animation-timing-function: linear;
+     opacity: 1;
+ }
+
+ @keyframes fadeInOut{
+    50%{
+        opacity: 0.3;
+    }
+ }
+
+.creditos {
+    margin-top: 50px;
+    font-size: 14px;
+    color: rgba(152, 152, 152, 1)
+}

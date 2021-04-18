@@ -2,8 +2,8 @@ console.log('js mapa')
 
 const styleURL = 'mapbox://styles/piscinadepixel/cknl6psxv12rz17teuir6yp6a'
 const accessTOKEN = 'pk.eyJ1IjoicGlzY2luYWRlcGl4ZWwiLCJhIjoiY2trenk1ZzE2MGViYTJ1cG5hbXY1c3A5ZCJ9.lso-cNpB8Id_MW1s6_BM7A'
-const mapZOOM = 5
-const mapCENTER = [-43.2075000, -22.9027800]
+const mapZOOM = 3
+const mapCENTER = [-54.54,-20.51]
 
 mapboxgl.accessToken = accessTOKEN;
 var map = new mapboxgl.Map({

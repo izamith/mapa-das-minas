@@ -84,3 +84,21 @@ async function Start() {
     await getData();
 }
 
+
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 7300);
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+  }
+  
+  function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+  }
+  
+  onReady(function () {
+    show('loading', false); 
+  });

@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
@@ -30,13 +30,14 @@ body {
 }
 
 .logo {
-    margin-bottom: 30%;   
+    margin-bottom: 30px;   
 }
 
 .textoLoading {
    width: 60%;
    text-align: center;
    font-size: 17px;
+   color: #232D18;
 }
 
 .frase {
@@ -45,8 +46,23 @@ body {
 }
 
 .carregandoGif {
-   margin-top: 20%;
+   margin-top: 60px;
+   margin-bottom: 120px;
 }
+
+ .loader {
+     animation-name: fadeInOut;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     -o-animation-timing-function: linear;
+     opacity: 1;
+ }
+
+ @keyframes fadeInOut{
+    50%{
+        opacity: 0.3;
+    }
+ }
 
 .creditos {
     margin-top: 50px;

@@ -2,6 +2,7 @@ console.log('js mapa')
 
 var coordenadasConjunto = []
 var pessoasConjunto = []
+var lugaresConjunto = []
 
 const styleURL = 'mapbox://styles/piscinadepixel/cknl6psxv12rz17teuir6yp6a'
 const accessTOKEN = 'pk.eyJ1IjoicGlzY2luYWRlcGl4ZWwiLCJhIjoiY2trenk1ZzE2MGViYTJ1cG5hbXY1c3A5ZCJ9.lso-cNpB8Id_MW1s6_BM7A'
@@ -23,7 +24,6 @@ var canvas = map.getCanvasContainer();
 map.on('load', function () {
 
     for (var i =0; i<conjuntos.length; i++) {
-      var perf = []
       var coord = []
       
       
@@ -31,8 +31,10 @@ map.on('load', function () {
       coord.push(conjuntos[i].latitude)
       coord.push(conjuntos[i].longitude)
 
-      pessoasConjunto .push(conjuntos[i].pessoa)
+      lugaresConjunto.push(conjuntos[i].sigla)
+      pessoasConjunto.push(conjuntos[i].pessoa)
       coordenadasConjunto.push(coord)
+      
 
       //console.log(pessoasConjunto,coordenadasConjunto)
     }
@@ -55,8 +57,8 @@ map.on('load', function () {
       "type": "FeatureCollection",
       //dados para fazer as layers
       "features": [
-         { "type": "Feature", "properties": { "mag": pessoasConjunto[12], "time": 1507425650893, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[12] } },
-         { "type": "Feature", "properties": { "mag": pessoasConjunto[11], "time": 1507425289659, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[11] } }
+         { "type": "Feature", "properties": { "mag": pessoasConjunto[0], "lugar": lugaresConjunto[0], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[0] } },
+         { "type": "Feature", "properties": { "mag": pessoasConjunto[1], "lugar": lugaresConjunto[1], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[1] } }
     ]},
    
     cluster: true,
@@ -122,59 +124,69 @@ map.on('load', function () {
           
           }
     });
-     
+  
+    /*
     // inspect a cluster on click
     map.on('click', 'clusters', function (e) {
-                      /*
-                    var features = map.queryRenderedFeatures(e.point, {
-                    layers: ['clusters']
-                    });
-                    var clusterId = features[0].properties.cluster_id;
-                    map.getSource('meninas').getClusterExpansionZoom(
-                    clusterId,
-                    function (err, zoom) {
-                    if (err) return;
+
                     
-                    map.easeTo({
-                    center: features[0].geometry.coordinates,
-                    zoom: zoom
-                    });
-                    }
-                    );
-                    */
         
                     var coordinates = e.features[0].geometry.coordinates.slice();
                     var mag = e.features[0].properties.mag;
-                    var tsunami;
-                     
-                    if (e.features[0].properties.tsunami === 1) {
-                    tsunami = 'yes';
-                    } else {
-                    tsunami = 'no';
-                    }
+                    
+                    console.log(e.features.properties)
                     // Ensure that if the map is zoomed out such that
-    // multiple copies of the feature are visible, the
-    // popup appears over the copy being pointed to.
-    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-      }
-       
-      new mapboxgl.Popup()
-      .setLngLat(coordinates)
-      .setHTML(
-      'magnitude: ' + mag + '<br>Was there a tsunami?: ' + tsunami
-      )
-      .addTo(map);
-      });
-       
-      map.on('mouseenter', 'clusters', function () {
-      map.getCanvas().style.cursor = 'pointer';
-      });
-      map.on('mouseleave', 'clusters', function () {
-      map.getCanvas().style.cursor = '';
-      });
+                    // multiple copies of the feature are visible, the
+                    // popup appears over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                      }
+                      
+                      new mapboxgl.Popup()
+                      .setLngLat(coordinates)
+                      .setHTML(
+                      'magnitude: ' + mag
+                      )
+                      .addTo(map);
+                      });
+    
+     */                 
 
-     
+                      map.on('click',/* cluster layer id */ 'clusters', function (e) {
+
+                        var features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
+                        var clusterId = features[0].properties.cluster_id,
+                        point_count = features[0].properties.point_count,
+                        clusterSource = map.getSource(/* cluster layer data source id */'meninas');
+                      
+                        // Get Next level cluster Children
+                        // 
+                        clusterSource.getClusterChildren(clusterId, function(err, aFeatures){
+                          console.log('getClusterChildren', err, aFeatures);
+                        });
+                      
+                        // Get all points under a cluster
+                        clusterSource.getClusterLeaves(clusterId, point_count, 0, function(err, aFeatures){
+                          console.log('getClusterLeaves', err, aFeatures);
+                        })
+                      
+                      });
+
+
+
+
+
+
+
+
+                      map.on('mouseenter', 'clusters', function () {
+                      map.getCanvas().style.cursor = 'pointer';
+                      });
+                      map.on('mouseleave', 'clusters', function () {
+                      map.getCanvas().style.cursor = '';
+                      });
+
+/*  
     // When a click event occurs on a feature in
     // the unclustered-point layer, open a popup at
     // the location of the feature, with
@@ -211,6 +223,7 @@ map.on('load', function () {
     map.on('mouseleave', 'clusters', function () {
     map.getCanvas().style.cursor = '';
     });
+  */
 });
 
 //////////////////////////////HELPER FUNCTIONS//////////////////////////////////

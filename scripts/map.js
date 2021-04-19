@@ -40,17 +40,25 @@ map.on('load', function () {
     // Add a new source from our GeoJSON data and
     // set the 'cluster' option to true. GL-JS will
     // add the point_count property to your source data.
-    map.addSource('earthquakes', {
+    map.addSource('meninas', {
     type: 'geojson',
     
-    
+      //cada menina 1 linha, tirar isso do hardcoded e colocar em uma tabela separada
+        //para linkar aqui
+        
+          data:
+          'https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson',
+        
+
+    /*
     data:{
       "type": "FeatureCollection",
       //dados para fazer as layers
       "features": [
          { "type": "Feature", "properties": { "mag": pessoasConjunto[12], "time": 1507425650893, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[12] } },
-         { "type": "Feature", "properties": { "perfil": 1.7, "time": 1507425289659, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -150.4048, 63.1224, 105.5 ] 
-        } }]},
+         // { "type": "Feature", "properties": { "perfil": 1.7, "time": 1507425289659, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -150.4048, 63.1224, 105.5 ] } }
+    ]},
+    */
     cluster: true,
     clusterMaxZoom: 14, // Max zoom to cluster points on
     clusterRadius: 5 // Radius of each cluster when clustering points (defaults to 50)
@@ -59,7 +67,7 @@ map.on('load', function () {
     map.addLayer({
     id: 'clusters',
     type: 'circle',
-    source: 'earthquakes',
+    source: 'meninas',
     filter: ['has', 'point_count'],
     paint: {
     // Use step expressions (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
@@ -68,49 +76,51 @@ map.on('load', function () {
     //   * Yellow, 30px circles when point count is between 100 and 750
     //   * Pink, 40px circles when point count is greater than or equal to 750
     'circle-color': [
-    'step',
-    ['get', 'point_count'],
-    '#51bbd6',
-    100,
-    '#f1f075',
-    750,
-    '#f28cb1'
-    ],
+      'step',
+      ['get', 'point_count'],
+          '#FAF7EE',
+          100,
+          '#FAF7EE',
+          750,
+          '#FAF7EE'
+          ],
     'circle-radius': [
-    'step',
-    ['get', 'point_count'],
-    20,
-    100,
-    30,
-    750,
-    40
-    ]
-    }
+          'step',
+          ['get', 'point_count'],
+          20,
+          100,
+          30,
+          750,
+          40
+          ]
+          }
     });
      
     map.addLayer({
-    id: 'cluster-count',
-    type: 'symbol',
-    source: 'earthquakes',
-    filter: ['has', 'point_count'],
-    layout: {
-    'text-field': '{point_count_abbreviated}',
-    'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-    'text-size': 12
-    }
+          id: 'cluster-count',
+          type: 'symbol',
+          source: 'meninas',
+          filter: ['has', 'point_count'],
+          layout: {
+          'text-field': '{point_count_abbreviated}',
+          'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+          'text-size': 12,
+          },
+          paint: {
+            "text-color": "#232D18"
+          }
     });
      
     map.addLayer({
-    id: 'unclustered-point',
-    type: 'circle',
-    source: 'earthquakes',
-    filter: ['!', ['has', 'point_count']],
-    paint: {
-    'circle-color': '#11b4da',
-    'circle-radius': 4,
-    'circle-stroke-width': 1,
-    'circle-stroke-color': '#fff'
-    }
+          id: 'unclustered-point',
+          type: 'circle',
+          source: 'meninas',
+          filter: ['!', ['has', 'point_count']],
+          paint: {
+          'circle-color': '#FAF7EE',
+          'circle-radius': 4,
+          
+          }
     });
      
     // inspect a cluster on click
@@ -119,7 +129,7 @@ map.on('load', function () {
     layers: ['clusters']
     });
     var clusterId = features[0].properties.cluster_id;
-    map.getSource('earthquakes').getClusterExpansionZoom(
+    map.getSource('meninas').getClusterExpansionZoom(
     clusterId,
     function (err, zoom) {
     if (err) return;

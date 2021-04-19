@@ -232,17 +232,8 @@ function addSource() {
               'https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson',
             
             */
-        
-        data:{
-          "type": "FeatureCollection",
-          //dados para fazer as layers
-          "features": [
-             { "type": "Feature", "properties": { "mag": pessoasConjunto[0], "lugar": lugaresConjunto[0], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[0] } },
-             { "type": "Feature", "properties": { "mag": pessoasConjunto[1], "lugar": lugaresConjunto[1], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[1] } },
-             { "type": "Feature", "properties": { "mag": pessoasConjunto[100], "lugar": lugaresConjunto[100], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[100] } },
-             { "type": "Feature", "properties": { "mag": pessoasConjunto[49], "lugar": lugaresConjunto[49], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[49] } },
-            
-            ]},
+        //https://cdn.jsdelivr.net/gh/izamith/mapa-das-minas/data/gerador.json'
+        data:'https://cdn.jsdelivr.net/gh/izamith/mapa-das-minas/data/gerador.json',
        
         cluster: true,
         clusterMaxZoom: 14, // Max zoom to cluster points on

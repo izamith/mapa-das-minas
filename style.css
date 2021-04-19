@@ -129,11 +129,12 @@ body {
     color: rgba(200, 189, 164, 0.25);
 }
 
-#infoConteudo {
+#infoConteudo a {
     color: #C14B34;
     font-size: 15px;
     text-align: center;
 }
+
 
 .infoFooter {
     color: rgba(35, 45, 24, 0.47);

@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////
 */
 
-function criaListas() {
+function criaConjuntos() {
     for (var i =0; i<minasConjunto.length; i++) {
       var j = minasConjunto[i].estado
       //console.log(j)
@@ -179,12 +179,13 @@ function criaListas() {
       }
   
       //cada bloco é um objeto com nome e coordenadas iniciais e finais
-      estadoi = new Caracters(incluirSigla, j, lat, long, minasConjunto[i].perfil )
+      estadoi = new Conjunto(incluirSigla, j, lat, long, minasConjunto[i].perfil )
           
           conjuntos.push(estadoi)
   
   }
-    console.log(conjuntos)
+    //debug
+      //console.log(conjuntos)
     }
 
 ////tela de carregamento////
@@ -212,7 +213,7 @@ function Mina(lugar, perfil) {
     this.perfil = perfil;
   }
 
-function Caracters(sigla, estado, lat, long, pessoa) {
+function Conjunto(sigla, estado, lat, long, pessoa) {
   this.sigla = sigla;
   this.estado = estado;
   this.latitude = lat;

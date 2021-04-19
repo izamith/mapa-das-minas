@@ -44,10 +44,8 @@ async function getDataEstados() {
 
     //debug
         //console.log(table);
-    console.log('csv estados carregado')
     dataCollectionEstados()
 }
-
 function dataCollectionEstados(){
     //pegar cada elemento(elt) de cada linha(row)
     //loop
@@ -68,11 +66,11 @@ function dataCollectionEstados(){
 
         //debug
             //console.log(estados, perfis)
-
+        //console.log('CSV ESTADOS Loaded')
 }
 
 //carrega os dados em variaveis MENINAS
-async function getData() {
+async function getDataMinas() {
     //carrega a tabela do arquivo csv
     const response = await fetch('data/dados.csv');
     //nome,inicio,fim
@@ -89,11 +87,9 @@ async function getData() {
 
     //debug
         //console.log(table);
-    console.log('csv carregado')
-    dataCollection()
+    dataCollectionMinas()
 }
-
-function dataCollection(){
+function dataCollectionMinas(){
     //pegar cada elemento(elt) de cada linha(row)
     //loop
     table.forEach(row=> {
@@ -112,21 +108,15 @@ function dataCollection(){
         //debug
             //console.log(estados, perfis)
 
-        //passar por todos os blocos
+        //passar por todos as meninas
         for (var i = 0; i<perfis.length; i++) {
             var minai
-        
-            //cada bloco é um objeto com nome e coordenadas iniciais e finais
+            //cada menina é um objeto com nome e coordenadas iniciais e finais
             minai = new Mina(estados[i], perfis[i])
-                
-                minasConjunto.push(minai)
-                    // console.log(blocoi)    
-            //console.log('O bloco '+ blocos[i]+ ' sai de ' + rotaInicio[i] + ' e vai até ' + rotaFim[i])
+            minasConjunto.push(minai)
         }
-        console.log('minas criadas')
-        console.log(minasConjunto)
 
-    //   document.getElementById('num-blocos').innerHTML=blocoConjunto.length
+        //console.log('CSV MINAS Loaded')
 }
 
-console.log('DATA COLLECTIONS Loaded')
+console.log('ALL DATA COLLECTIONS Loaded')

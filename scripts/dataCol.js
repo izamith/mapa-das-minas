@@ -1,11 +1,29 @@
-/* mapa das minas, 2021
-piscinadepixel, Isabela Zamith 
+/*
+/////////////////////////////////////////////////////////////////
+                    mapa das minas, 2021
+                piscinadepixel, Isabela Zamith 
+/////////////////////////////////////////////////////////////////
+
+    Esse arquivo pega os dados das tabelas CSV 
+    @ das meninas do quad e coordenadas de cada estado brasileiro
+
+    DADOS DAS TABELAS
+    Coordenadas dos estados do Brasil:
+    https://gist.github.com/ricardobeat/674646
+
+    Compilado de @ das meninas do quad: 
+    https://instagram.com/haoleskater/
 */
 
 let estados = []
 let perfis = []
 let minasConjunto = []
 let table 
+
+let siglasEstados = []
+let latEstados = []
+let longEstados = []
+let coordenadas = []
 
 
 //carrega os dados em variaveis ESTADOS

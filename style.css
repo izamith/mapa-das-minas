@@ -15,9 +15,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-grow: 2;
 }
 
-#dropdownMenu1,.dropdown-menu  {
+#dropdownMenu1,.dropdown-menu {
     background:  #FAF7EE;
     color: #C8BDA4;
     border-radius: 3px;
@@ -59,7 +60,7 @@ body {
 
 .dropdown {
     width: 50%;
-    margin-top: 15px;
+    margin:15px;
 }
 
 .lupa {
@@ -82,15 +83,42 @@ body {
     padding-top: 30px;
 }
 
-.container-fluid.bot {
-    border: 2px solid green;
-   
-}
-.busca {
+.busca, .link {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.link{
+    background:  #FAF7EE;
+    border-radius: 3px;
+   margin: 0;
+   border-radius: 3px;
+   text-align: center;
+   padding: 10px; 
+   margin: 15px;
+   color: #C8BDA4;
+   font-size: 15px;
+}
+
+.link a {
+    padding: 5px;
+    font-size: 15px;
+    color: #C8BDA4;
+    text-decoration: none;
+}
+
+.link:hover {
+    background:   #fff5df;
+    color: #a59061;
+    cursor: pointer;
+}
+.link a:hover {
+    padding: 5px;
+    font-size: 15px;
+    background:   #fff5df;
+    color: #a59061;
 }
 
 #box-info {
@@ -111,6 +139,8 @@ body {
    opacity: 0;
    transition: height 0.5s, opacity 0.5s linear;
 }
+
+
 
 .infoTitulo p {
     padding-bottom: 0;

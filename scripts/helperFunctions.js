@@ -464,7 +464,18 @@ function addLayers() {
         });
 }
 
+function abreSaibaMais() {
+  document.getElementById('maisInfo').style.height="100%"
+  document.getElementById('maisInfo').style.opacity=1
+  document.getElementById('maisInfo').style.display='flex'
 
+}
+
+function fechaSaibaMais() {
+  document.getElementById('maisInfo').style.height="0"
+  document.getElementById('maisInfo').style.opacity=0
+  document.getElementById('maisInfo').style.display='none'
+}
 
 
 console.log('HELPER FUNCTIONS Loaded')

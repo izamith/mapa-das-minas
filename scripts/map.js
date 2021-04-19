@@ -83,7 +83,8 @@ map.on('load', function () {
       //desenhar o popup 
       document.getElementById('infoConteudo').innerHTML=''
       document.getElementById('estadoExib').innerHTML=aFeatures[0].properties.lugar.toUpperCase()
-      document.getElementById('box-info').style.display="inline-block"
+      document.getElementById('box-info').style.height= '400px';
+      document.getElementById('box-info').style.opacity= 1;
       var caixa = document.getElementById('infoConteudo')
 
 
@@ -117,13 +118,20 @@ map.on('load', function () {
         map.on('click', function(e) {
           if (e.defaultPrevented === false) {
             console.log('hide taskbar');
-            document.getElementById('box-info').style.display="none"
+            document.getElementById('box-info').style.height= '0';
+            document.getElementById('box-info').style.opacity= 0;
           }
         });
 
 
     //bolinhas sozinhas :(
     map.on('click', 'unclustered-point', function (e) {
+      map.on('mouseenter', 'unclustered-point', function () {
+        map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'unclustered-point', function () {
+        map.getCanvas().style.cursor = '';
+        });
       var perfilEmInfo = e.features[0].properties.mag;
       var onde = e.features[0].properties.lugar;
       console.log(perfilEmInfo,onde)
@@ -131,7 +139,8 @@ map.on('load', function () {
       //desenhar o popup 
       document.getElementById('infoConteudo').innerHTML=''
       document.getElementById('estadoExib').innerHTML=onde.toUpperCase()
-      document.getElementById('box-info').style.display="inline-block"
+      document.getElementById('box-info').style.height= '400px';
+      document.getElementById('box-info').style.opacity= 1;
       var caixa = document.getElementById('infoConteudo')
 
         var link = 'https://www.instagram.com/'+ perfilEmInfo.substr(1)+'/';

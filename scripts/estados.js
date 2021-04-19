@@ -12,10 +12,3 @@ let latEstados = []
 let longEstados = []
 let coordenadas = []
 
-//funcao construtora de objetos ESTADO
-function Estado(sigla, estado, lat, long) {
-    this.sigla = sigla;
-    this.estado = estado;
-    this.latitude = lat;
-    this.longitude = long;
-  }

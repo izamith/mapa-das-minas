@@ -233,7 +233,7 @@ function addSource() {
             
             */
         //https://cdn.jsdelivr.net/gh/izamith/mapa-das-minas/data/gerador.json'
-        data:'https://cdn.jsdelivr.net/gh/izamith/mapa-das-minas/data/gerador.json',
+        data:'https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/izamith/mapa-das-minas/blob/2d6d6627d5c2804ce0ac50bcff5de4dd43190dc3/data/gerador.geojson',
        
         cluster: true,
         clusterMaxZoom: 14, // Max zoom to cluster points on

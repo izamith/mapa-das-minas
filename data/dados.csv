@@ -1,131 +1,180 @@
-estado, perfil
-Rio de Janeiro,@patinanju
-Rio de Janeiro,@haoleskater
-Rio de Janeiro,@lulu_rolls
-Rio de Janeiro,@daniela.orocha
-Rio de Janeiro,@isabelazamith
-Rio de Janeiro,@outbeck
-Rio de Janeiro,@_alyne_
-Rio de Janeiro,@gabilly54
-Rio de Janeiro,@kika__cordova
-Rio de Janeiro,@4na.m.machado
-Rio de Janeiro,@analumnsr
-Rio de Janeiro,@discostreetz_
-Rio de Janeiro,@sophi_guimaraes
-Rio de Janeiro,@cleo.bicho
-Rio de Janeiro,@lanes0104
-Rio de Janeiro,@thaisguttler
-Rio de Janeiro,@atomx___
-Rio de Janeiro,@tipomarcella
-Rio de Janeiro,@mansmb
-Rio de Janeiro,@mayaralista
-Rio de Janeiro,@bordacoraline
-Rio de Janeiro,@patinagabby
-Rio de Janeiro,@k.arensousa
-Rio de Janeiro,@lcpsdois
-Minas Gerais,@manvsena
-Minas Gerais,@ma.riar
-Minas Gerais,@daysofdani 
-Minas Gerais,@kikisantororollerskate
-Minas Gerais,@_luquesia_
-Minas Gerais,@tainaevaristo
-Minas Gerais,@thaissdsg
-Minas Gerais,@alisiqueiraa
-Santa Catarina,@volatilx
-Santa Catarina,@sarasetter
-Santa Catarina,@febiasoli
-Santa Catarina,@lelisbang
-Santa Catarina,@larissagds
-Santa Catarina,@cahcarvalhotattoo
-Santa Catarina,@oipoly
-Rio Grande do Sul,@rollerskt
-Rio Grande do Sul,@dni.roussely
-Rio Grande do Sul,@verdiener
-Rio Grande do Sul,@isaluft
-Rio Grande do Sul,@anna.rollerskating
-Rio Grande do Sul,@aisisnaoehipster
-Rio Grande do Sul,@dfonsecca
-Pará,@vaness_sk8
-Piauí,@oi_luana
-Piauí,@larissa_zayra
-Piauí,@lolaxquad
-Mato Grosso do Sul,@fer.maeda
-Mato Grosso do Sul,@mylena.oliveiraaa
-Espírito Santo,@pproller
-Espírito Santo,@suelenfernandes815
-Espírito Santo,@luna.ldj
-Espírito Santo,@alicefernandes5264
-Distrito Federal,@aline_rollersk8
-Distrito Federal,@rayinbow.yellow
-Distrito Federal,@trizsouza.181
-Distrito Federal,@cherry_bomb._
-Distrito Federal,@ester_amane
-Ceará,@manusuis
-Ceará,@purple_drank_777
-Ceará,@iver.pinheiro
-Ceará,@soujufilgueiras
-Ceará,@bellam0rais
-Bahia,@amangaverde
-Sergipe,@laellia83
-São Paulo,@mavigrisi
-São Paulo,@carlafortunattt
-São Paulo,@sk8.na
-São Paulo,@k.tainax
-São Paulo,@ester_amane
-São Paulo,@jan.skating
-São Paulo,@mezzstreet
-São Paulo,@natharocha
-São Paulo,@fefafaz
-São Paulo,@carolmiguelt
-São Paulo,@chermount_
-São Paulo,@nicollevictoria_
-São Paulo,@alt.sal
-São Paulo,@mvy.exe
-São Paulo,@rafanola
-São Paulo,@larafalls_
-São Paulo,@stonedgaia
-São Paulo,@mimapatina
-São Paulo,@black.juju
-São Paulo,@nevess_bia
-São Paulo,@thaixchaves
-São Paulo,@hiyamandi
-São Paulo,@dryad.skt
-São Paulo,@jessicabribeiro_
-São Paulo,@elisacarvalho_
-São Paulo,@appleofthedevil
-São Paulo,@persancarol
-São Paulo,@belamuri
-São Paulo,@miilke
-São Paulo,@danisrollerskates
-São Paulo,@mvy.exe
-São Paulo,@be.adren.aline
-São Paulo,@rah.cellos
-São Paulo,@mourarobs
-São Paulo,@jessica.fuscazul
-São Paulo,@_luquesia_ 
-São Paulo,@carolmech
-São Paulo,@ll.uaa
-São Paulo,@kellslt
-São Paulo,@nanamairynck
-São Paulo,@aghatacatarino
-São Paulo,@chrisholopainen
-São Paulo,@be4trizzzzz
-Paraná,@brtrmi
-Paraná,@lua_namendes 
-Paraná,@patinsfoxy
-Paraná,@ba.tins
-Paraná,@zascalon
-Paraná,@carolineattilio
-Paraná,@nannoka
-Paraná,@isabelleam_
-Paraná,@larissagds
-Paraná,@souzapequena
-Paraná,@jcavichiolo
-Paraná,@ellen_niimoto
-Paraná,@n.becker__
-Paraná,@mportellaa
-Paraná,@cassiaonwheels
-Paraná,@bibitelles
-Paraná,@luzitelles
-Paraná,@maribomfati
-Paraná,@marissardias
+perfil, estado
+@amangaverde,Bahia
+@manusuis,Ceará
+@purple_drank_777,Ceará
+@iver.pinheiro,Ceará
+@soujufilgueiras,Ceará
+@bellam0rais,Ceará
+@eukayane,Ceará
+@deisek2,Ceará
+@aline_rollersk8,Distrito Federal
+@rayinbow.yellow,Distrito Federal
+@trizsouza.181,Distrito Federal
+@cherry_bomb._,Distrito Federal
+@ester_amane,Distrito Federal
+@karolinda_a,Distrito Federal
+@lobodaenf,Distrito Federal
+@andarilhanoturna,Distrito Federal
+@pproller,Espírito Santo
+@jenniferkelly_sc,Espírito Santo
+@suelenfernandes815,Espírito Santo
+@luna.ldj,Espírito Santo
+@alicefernandes5264,Espírito Santo
+@camilesarauj,Goiás
+@fer.maeda,Mato Grosso do Sul
+@mylena.oliveiraaa,Mato Grosso do Sul
+@manvsena,Minas Gerais
+@ma.riar,Minas Gerais
+@daysofdani,Minas Gerais
+@kikisantororollerskate,Minas Gerais
+@leonnidas13,Minas Gerais
+@janaina_souza_lima,Minas Gerais
+@thalita.hellem,Minas Gerais
+@_luquesia_,Minas Gerais
+@tainaevaristo,Minas Gerais
+@thaissdsg,Minas Gerais
+@alisiqueiraa,Minas Gerais
+@isabellarodsil,Minas Gerais
+@tamiriscorreas,Minas Gerais
+@malutamietti,Minas Gerais
+@vaness_sk8,Pará
+@cesileah,Paraíba
+@almaragao,Paraíba
+@brtrmi,Paraná
+@lua_namendes,Paraná
+@patinsfoxy,Paraná
+@ba.tins,Paraná
+@zascalon,Paraná
+@carolineattilio,Paraná
+@Tah_salvaninii,Paraná
+@nannoka,Paraná
+@isabelleam_,Paraná
+@larissagds,Paraná
+@souzapequena,Paraná
+@jcavichiolo,Paraná
+@ellen_niimoto,Paraná
+@n.becker__,Paraná
+@mportellaa,Paraná
+@cassiaonwheels,Paraná
+@bibitelles,Paraná
+@luzitelles,Paraná
+@maribomfati,Paraná
+@marissardias,Paraná
+@jana193_,Pernambuco
+@tainaaynoabarros,Pernambuco
+@almaragao,Pernambuco
+@oi_luana,Piauí
+@larissa_zayra,Piauí
+@lolaxquad,Piauí
+@patinanju,Rio de Janeiro
+@haoleskater,Rio de Janeiro
+@lulu_rolls,Rio de Janeiro
+@daniela.orocha,Rio de Janeiro
+@isabelazamith,Rio de Janeiro
+@tigerbauer_28,Rio de Janeiro
+@mayrollerskate,Rio de Janeiro
+@juebelopes,Rio de Janeiro
+@brrruna_,Rio de Janeiro
+@outbeck,Rio de Janeiro
+@_alyne_,Rio de Janeiro
+@gabilly54,Rio de Janeiro
+@kika__cordova,Rio de Janeiro
+@4na.m.machado,Rio de Janeiro
+@analumnsr,Rio de Janeiro
+@discostreetz_,Rio de Janeiro
+@sophi_guimaraes,Rio de Janeiro
+@cleo.bicho,Rio de Janeiro
+@lanes0104,Rio de Janeiro
+@thaisguttler,Rio de Janeiro
+@atomx___,Rio de Janeiro
+@tipomarcella,Rio de Janeiro
+@mansmb,Rio de Janeiro
+@mayaralista,Rio de Janeiro
+@bordacoraline,Rio de Janeiro
+@patinagabby,Rio de Janeiro
+@k.arensousa,Rio de Janeiro
+@lcpsdois,Rio de Janeiro
+@almaragao,Rio Grande do Norte
+@rollerskt,Rio Grande do Sul
+@dni.roussely,Rio Grande do Sul
+@verdiener,Rio Grande do Sul
+@isaluft,Rio Grande do Sul
+@anna.rollerskating,Rio Grande do Sul
+@aisisnaoehipster,Rio Grande do Sul
+@julialm,Rio Grande do Sul 
+@dfonsecca,Rio Grande do Sul
+@volatilx,Santa Catarina
+@sarasetter,Santa Catarina
+@febiasoli,Santa Catarina
+@lelisbang,Santa Catarina
+@larissagds,Santa Catarina
+@cahcarvalhotattoo,Santa Catarina
+@evelynhighness,Santa Catarina
+@fiosdeourodalaura,Santa Catarina
+@oipoly,Santa Catarina
+@mavigrisi,São Paulo
+@carlafortunattt,São Paulo
+@sk8.na,São Paulo
+@k.tainax,São Paulo
+@ester_amane,São Paulo
+@jan.skating,São Paulo
+@mezzstreet,São Paulo
+@natharocha,São Paulo
+@fefafaz,São Paulo
+@carolmiguelt,São Paulo
+@chermount_,São Paulo
+@nicollevictoria_,São Paulo
+@alt.sal,São Paulo
+@mvy.exe,São Paulo
+@rafanola,São Paulo
+@larafalls_,São Paulo
+@stonedgaia,São Paulo
+@mimapatina,São Paulo
+@black.juju,São Paulo
+@nevess_bia,São Paulo
+@thaixchaves,São Paulo
+@lenasentrelinhas,São Paulo
+@leonnidas13,São Paulo
+@iisacabral,São Paulo 
+@ibrabello,São Paulo 
+@brrruna_,São Paulo 
+@ta_batatinha,São Paulo
+@_hellall_,São Paulo
+@rafaelavieiralima,São Paulo
+@quelobo,São Paulo
+@annajusp,São Paulo
+@hiyamandi,São Paulo
+@dryad.skt,São Paulo
+@jessicabribeiro_,São Paulo
+@elisacarvalho_,São Paulo
+@appleofthedevil,São Paulo
+@persancarol,São Paulo
+@belamuri,São Paulo
+@miilke,São Paulo
+@danisrollerskates,São Paulo
+@mvy.exe,São Paulo
+@be.adren.aline,São Paulo
+@rah.cellos,São Paulo
+@mourarobs,São Paulo
+@jessica.fuscazul,São Paulo
+@_luquesia_,São Paulo
+@carolmech,São Paulo
+@ll.uaa,São Paulo
+@kellslt,São Paulo
+@nanamairynck,São Paulo
+@aghatacatarino,São Paulo
+@chrisholopainen,São Paulo
+@be4trizzzzz,São Paulo
+@naathaliafugazzotto,São Paulo
+@saraaregina,São Paulo
+@laellia83,Sergipe
+
+
+
+
+
+
+
+
+
+

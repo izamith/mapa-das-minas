@@ -54,7 +54,7 @@ function dataCollectionEstados(){
         //coluna
         const columns = row.split(',');
         //elemento 0 da linha
-        const siglaEstado = columns[0];
+        const siglaEstado = columns[1];
         //coloca cada area numa array "xareas"
         siglasEstados.push(siglaEstado);
 
@@ -97,11 +97,11 @@ function dataCollectionMinas(){
         //coluna
         const columns = row.split(',');
         //elemento 0 da linha
-        const estadoMina = columns[0];
+        const estadoMina = columns[1];
         //coloca cada area numa array "xareas"
         estados.push(estadoMina);
 
-        const perfilMina = columns[1];
+        const perfilMina = columns[0];
         perfis.push(perfilMina)
         });
 

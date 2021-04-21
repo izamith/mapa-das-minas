@@ -411,7 +411,7 @@ function addSource() {
              { "type": "Feature", "properties": { "mag": pessoasConjunto[166], "lugar": lugaresConjunto[166], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[166] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[167], "lugar": lugaresConjunto[167], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[167] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[168], "lugar": lugaresConjunto[168], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[168] } },
-              /*
+             
              { "type": "Feature", "properties": { "mag": pessoasConjunto[169], "lugar": lugaresConjunto[169], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[169] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[170], "lugar": lugaresConjunto[170], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[170] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[171], "lugar": lugaresConjunto[171], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[171] } },
@@ -432,13 +432,32 @@ function addSource() {
              { "type": "Feature", "properties": { "mag": pessoasConjunto[186], "lugar": lugaresConjunto[186], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[186] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[187], "lugar": lugaresConjunto[187], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[187] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[188], "lugar": lugaresConjunto[188], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[188] } },
-             { "type": "Feature", "properties": { "mag": pessoasConjunto[189], "lugar": lugaresConjunto[189], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[189] } },
+             /*
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[189], "lugar": lugaresConjunto[189], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[189] } }, 
              { "type": "Feature", "properties": { "mag": pessoasConjunto[190], "lugar": lugaresConjunto[190], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[190] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[191], "lugar": lugaresConjunto[191], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[191] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[192], "lugar": lugaresConjunto[192], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[192] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[193], "lugar": lugaresConjunto[193], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[193] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[194], "lugar": lugaresConjunto[194], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[194] } },
              { "type": "Feature", "properties": { "mag": pessoasConjunto[195], "lugar": lugaresConjunto[195], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[195] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[196], "lugar": lugaresConjunto[196], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[196] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[197], "lugar": lugaresConjunto[197], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[197] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[198], "lugar": lugaresConjunto[198], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[198] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[199], "lugar": lugaresConjunto[199], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[199] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[200], "lugar": lugaresConjunto[200], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[200] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[201], "lugar": lugaresConjunto[201], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[201] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[202], "lugar": lugaresConjunto[202], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[202] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[203], "lugar": lugaresConjunto[203], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[203] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[204], "lugar": lugaresConjunto[204], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[204] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[205], "lugar": lugaresConjunto[205], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[205] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[206], "lugar": lugaresConjunto[206], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[206] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[207], "lugar": lugaresConjunto[207], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[207] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[208], "lugar": lugaresConjunto[208], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[208] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[209], "lugar": lugaresConjunto[209], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[209] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[210], "lugar": lugaresConjunto[210], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[210] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[211], "lugar": lugaresConjunto[211], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[211] } },
+             { "type": "Feature", "properties": { "mag": pessoasConjunto[212], "lugar": lugaresConjunto[212], "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": coordenadasConjunto[212] } },
+             
              */
             ]},
        

@@ -188,6 +188,7 @@ function criaConjuntos() {
       //console.log(conjuntos)
     }
 
+    /*
 ////tela de carregamento////
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 8000);
@@ -198,15 +199,21 @@ function onReady(callback) {
         }
     }
   }
-  
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-  }
-  
+
+   
 onReady(function () {
     show('loading', false); 
   });
 
+  */
+  
+
+
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+  }
+ 
 ////objetos////
 function Mina(lugar, perfil) {
     this.estado= lugar;

@@ -1,7 +1,11 @@
+.mapboxgl-ctrl-bottom-left,.mapboxgl-ctrl-bottom-right {
+    display: none;
+}
+
 #loading,#maisInfo {
     background-image: url('assets/loadingbg.png');
     z-index: 110;
-    display: block;
+    display: none;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -16,6 +20,7 @@
     align-items: center;  
 }
 
+
 #maisInfo {
     height: -100;
     padding-top: 50px;
@@ -24,16 +29,12 @@
     transition: height 0.5s, opacity 0.5s, display 1s, linear,;
 }
 
-.close {
 
-}
+
 .close:hover {
 cursor: pointer;
 }
 
-.logo {
-
-}
 
 .textoLoading {
    width: 60%;

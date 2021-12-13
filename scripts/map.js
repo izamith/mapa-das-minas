@@ -15,7 +15,7 @@ var pessoasConjunto = []
 var lugaresConjunto = []
 
 //mapbox assets
-const styleURL = 'mapbox://styles/piscinadepixel/cknl6psxv12rz17teuir6yp6a'
+const styleURL = 'mapbox://styles/piscinadepixel/ckwwyy87o0lpp14mo9v0uex3e'
 const accessTOKEN = 'pk.eyJ1IjoicGlzY2luYWRlcGl4ZWwiLCJhIjoiY2trenk1ZzE2MGViYTJ1cG5hbXY1c3A5ZCJ9.lso-cNpB8Id_MW1s6_BM7A'
 const mapZOOM = 3
 const mapCENTER = [-55.42,-12.64]
